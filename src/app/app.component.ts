@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo';
+  public todos: any[] = []; // vazio - lista de qualquer tipo (object, por exemplo)
+  // public todos: any[] // undefined
+
+  public title: String = 'Minhas tarefas';
+
+  constructor() {
+    this.todos.push('passear com o cachorro');
+    this.todos.push('ir ao supermercado');
+    this.todos.push('cortar o cabelo');
+    // this.todos.push(1987);
+  }
+
+  alteraTexto(){
+    this.title = 'Teste';
+  }
 }
