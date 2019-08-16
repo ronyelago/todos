@@ -21,4 +21,8 @@ export class AppComponent {
   alteraTexto(){
     this.title = 'Teste';
   }
+
+  remove(){
+    this.todos.pop();
+  }
 }
