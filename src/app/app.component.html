@@ -1,5 +1,8 @@
 <h1>{{ title }}</h1>
 <ul>
-    <li *ngFor="let todo of todos">{{ todo }} <button (click)="remove()">Remover</button></li>
+    <li *ngFor="let todo of todos">
+        {{ todo.id}}. {{ todo.title }} 
+        <button (click)="remove()">Remover</button>
+    </li>
 </ul>
 <button (click)="alteraTexto()">Alterar</button>
